@@ -19,6 +19,8 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/media-queries.css">
 
+	
+
 	<!-- Favicon o iconos selecionables -->
 	<link rel="shortcut icon" href="assets/ico/hotelUbicacion_16x16.png">
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/hotelUbicacion_144x144.png">
@@ -146,11 +148,249 @@
 						</div>
 					</div>
 
+					<form>
+						<h3 class="text-left">Datos de la nueva reservación</h3>
+						<hr class="col-4 float-left border border-secondary"><br>
+						<br>
+						<div class="form-row">
+							<div class="form-group col-md-3">
+								<label for="codreservacion" class="float-left">Cod. reservación</label>
+								<input type="text" class="form-control" id="codreservacion" placeholder="00000">
+							</div>
+							
+							<div class="form-group col-md-6">
+								<label for="thabitacion" class="float-left">Nombre del Huesped</label>
+								<select id="thabitacion" class="form-control">
+									<option selected>Opciones...</option>
+									<option>...</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-4">
+								<label for="Nhuesped" class="float-left">Tipo de habitación</label>
+								<select id="Nhuesped" class="form-control">
+									<option selected>Opciones...</option>
+									<option>...</option>
+								</select>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="nhabitacion" class="float-left">Numero de habitación</label>
+								<select class="form-control" id="nhabitacion">
+								  <option>1</option>
+								  <option>2</option>
+								  <option>3</option>
+								  <option>4</option>
+								  <option>5</option>
+								</select>
+							  </div>
+							
+							<div class="form-group col-md-4">
+								<label for="phabitacion" class="float-left">Precio habitación</label>
+								<input type="text" class="form-control" id="phabitacion" placeholder="LPS.--">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<form>
+									<!-- calendario  -->
+								   <div class="form-group mb-6">
+									<label for="fllegada" class="float-left">Fecha de Llegada</label>
+									 <div class="datepicker date input-group">
+									   <input type="text" placeholder="Elegir Fecha" class="form-control" id="fllegada">
+									   <div class="input-group-append">
+										 <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+									   </div>
+									 </div>
+								   </div>
+									<!-- // calendario  -->
+								 </form>
+							</div>
+
+							<div class="form-group col-md-6">
+								<form>
+									<!-- calendario  -->
+								   <div class="form-group mb-6">
+									<label for="fsalida" class="float-left">Fecha de Salida</label>
+									 <div class="datepicker date input-group">
+									   <input type="text" placeholder="Elegir Fecha" class="form-control" id="fsalida">
+									   <div class="input-group-append">
+										 <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+									   </div>
+									 </div>
+								   </div>
+									<!-- // calendario  -->
+								 </form>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-4">
+								<label for="nhabitacion" class="float-left">Numero de Adultos</label>
+								<select class="form-control" id="nhabitacion">
+								  <option>1</option>
+								  <option>2</option>
+								  <option>3</option>
+								  <option>4</option>
+								  <option>5</option>
+								</select>
+							  </div>
+
+							<div class="form-group col-md-4">
+								<label for="nhabitacion" class="float-left">Numero de Niños</label>
+								<select class="form-control" id="nhabitacion">
+								  <option>1</option>
+								  <option>2</option>
+								  <option>3</option>
+								  <option>4</option>
+								  <option>5</option>
+								</select>
+							  </div>
+							
+							<div class="form-group col-md-4">
+								<label for="nhabitacion" class="float-left">Numero de Bebes</label>
+								<select class="form-control" id="nhabitacion">
+								  <option>1</option>
+								  <option>2</option>
+								  <option>3</option>
+								  <option>4</option>
+								  <option>5</option>
+								</select>
+							  </div>
+						</div>
+						  
+
+						<div class="form-row">
+							<div class="form-group col-md-12">
+								<label class="float-left">Complementos</label>
+
+							</div>
+
+							<div class="form-group col-md-12">
+								
+
+						
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="desayuno">Desayuno
+										</label>
+	
+									</div>
+	
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="almuerzo">Almuerzo
+										</label>
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="cena">Cena
+										</label>
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="postres"> Postres
+										</label>
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="recoger"> Recoger en el aeropuerto/Est. Tren
+										</label>
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="parking"> Parking
+										</label>
+									</div>
+							</div>	
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-12">
+								<label class="float-left">Actividades</label>
+
+							</div>
+
+							<div class="form-group col-md-12">
+								
+
+						
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="desayuno"> Tour turistico por la ciudad
+										</label>
+	
+									</div>
+	
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="almuerzo">  Tour Gastronomico
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="cena">Tour cultural
+										</label>
+									</div>
+							</div>	
+						</div>
+						
+						<div class="form-row">
+						<div class="form-group col-md-12">
+							<label class="float-left">Se puede cancelar</label>
+
+						</div>
+						<div class="form-group col-md-12">
+								
+
+							<div class="form-check-inline pr-3 float-left">
+								<input type="radio" class="form-check-input" name="optradio">Cancelar (Con Recargo)
+							</div>
+
+							<div class="form-check-inline pr-3 float-left">
+								<input type="radio" class="form-check-input" name="optradio">No Cancelar
+							</div>
+							<div class="form-check-inline pr-3 float-left">
+								<div class="input-group-prepend">
+									<span class="input-group-text">$</span>
+								  </div>
+								  <input type="number" class="form-control" aria-label="Dollar amount">
+							</div>	
+					</div>
+
+
+
+					
+
+						<div class="form-row">
+							<div class="form-group col-md-12">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" value="" id="Condiciones">
+									<label class="form-check-label" for="Condiciones">
+									  Terminos y Condiciones
+									</label>
+								  </div>
+							</div>
+							
+						</div>
+					</form>
+					<button type="button" class="btn btn-success col-12">Guardar datos de la reservación</button>
+
 				</div>
-				<br><br><br>
+
+				
+
+				</div>
+				<br><br>
 
 
-			</div>
+			 </div> -->
 			<!-- Final de la seccion #1 -->
 
 			<!-- INICIO DE LA SECCION 2 -->
@@ -312,16 +552,119 @@
 			</div>
 
 			<!-- Section 4 -->
+			<!-- HABITACIONES -->
 			<div class="section-5-container section-container" id="section-4">
 				<div class="container">
 					<div class="row">
 						<div class="col section-5 section-description wow fadeIn">
 							<h2>Habitaciones</h2>
-							<div class="divider-1 wow fadeInUp"><span></span></div>
-							<p>We have completed 486 projects since we started back in 2013. Check them out!</p>
 						</div>
 					</div>
-					<div class="row">
+
+					<h3 class="text-left">Administración de habitación</h3>
+					<hr class="col-4 float-left border border-secondary"><br>
+					<br>
+
+					<form>
+						<div class="form-row">
+							<div class="form-row">
+								<div class="form-group col-md-2">
+									<label for="codreservacion" class="float-left">Cod. habitación</label>
+									<input type="text" class="form-control" id="codreservacion" placeholder="00000">
+								</div>
+								
+								<div class="form-group col-md-5">
+									<label for="nhabitacion" class="float-left">Nombre de habitación</label>
+									<input type="text" class="form-control" id="nhabitacion" placeholder="Name">
+								</div>
+
+								<div class="form-group col-md-5">
+									<label for="tipohabitacion" class="float-left">Tipo de habitación</label>
+									<select id="tipohabitacion" class="form-control">
+										<option selected>Opciones...</option>
+										<option>...</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-12">
+								<label for="inputDescripcion" class="float-left">Descripción</label>
+								<input type="text" class="form-control" id="inputDescripcion"
+									placeholder="...">
+							</div>
+						</div>
+
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="Tcama" class="float-left">Tipo de cama</label>
+								<select id="Tcama" class="form-control">
+									<option selected>Opciones...</option>
+									<option>...</option>
+								</select>
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="Tvista" class="float-left">Tipo de vista</label>
+								<select id="Tvista" class="form-control">
+									<option selected>Opciones...</option>
+									<option>...</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="tamaniohabitacion" class="float-left">Tamaño de habitación</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+									  <span class="input-group-text">SQM</span>
+									</div>
+									<input type="number" class="form-control">
+								  </div>
+								  
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="Mpersonas" class="float-left">Maximo de personas</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+									</div>
+									<input type="number" class="form-control">
+							</div>
+						</div>
+
+
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="preciohabitacion" class="float-left">Precio de habitación</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+									  <span class="input-group-text">$</span>
+									</div>
+									<input type="number" class="form-control">
+								  </div>  
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="Tvista" class="float-left">Habitación</label>
+								<div class="custom-file">
+									<input type="file" class="custom-file-input" id="customFileLang" lang="es">
+									<label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+								  </div>
+							</div>
+								  
+								</div>	
+							</div>
+						</div>
+					</form>
+					
+
+					<!-- <div class="row">
 						<div class="col-md-4 section-5-box wow fadeInUp">
 							<div class="section-5-box-image"><img src="assets/img/portfolio/1.jpg" alt="portfolio-1">
 							</div>
@@ -346,7 +689,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 								incididunt ut labore et.</p>
 						</div>
-					</div>
+					</div> -->
 					<div class="row">
 						<div class="col section-bottom-button wow fadeInUp">
 							<a class="btn btn-primary btn-customized" href="#" role="button">
@@ -356,6 +699,9 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- FIN SECTION 4 -->
+			<!-- FINAL FORM HABITACIONES -->
 
 			<!-- Section 5 -->
 			<div class="section-6-container section-container section-container-image-bg" id="section-6">
@@ -431,6 +777,7 @@
 
 	<!-- Javascript -->
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	
 	<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
@@ -438,7 +785,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
-
+	<script src="assets/js/datepicker.js"></script>
 	<script src="assets/js/jquery.backstretch.min.js"></script>
 	<script src="assets/js/wow.min.js"></script>
 	<script src="assets/js/jquery.waypoints.min.js"></script>
@@ -446,6 +793,12 @@
 	<script src="assets/js/scripts.js"></script>
 	<script src="https://kit.fontawesome.com/3e069d0dca.js" crossorigin="anonymous"></script>
 
+	 <!-- Datepicker -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	  <!-- datepicker styles -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
+
+	
 </body>
 
 </html>
