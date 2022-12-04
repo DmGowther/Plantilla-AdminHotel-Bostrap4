@@ -223,7 +223,6 @@
 											</div>
 										</div>
 									</div>
-									<!-- // calendario  -->
 								</form>
 							</div>
 						</div>
@@ -267,13 +266,8 @@
 						<div class="form-row">
 							<div class="form-group col-md-12">
 								<label class="float-left">Complementos</label>
-
 							</div>
-
 							<div class="form-group col-md-12">
-
-
-
 								<div class="form-check-inline pr-3 float-left">
 									<label class="form-check-label">
 										<input type="checkbox" class="form-check-input" name="desayuno">Desayuno
@@ -313,17 +307,11 @@
 								</div>
 							</div>
 						</div>
-
 						<div class="form-row">
 							<div class="form-group col-md-12">
 								<label class="float-left">Actividades</label>
-
 							</div>
-
 							<div class="form-group col-md-12">
-
-
-
 								<div class="form-check-inline pr-3 float-left">
 									<label class="form-check-label">
 										<input type="checkbox" class="form-check-input" name="desayuno"> Tour turistico
@@ -352,8 +340,6 @@
 
 							</div>
 							<div class="form-group col-md-12">
-
-
 								<div class="form-check-inline pr-3 float-left">
 									<input type="radio" class="form-check-input" name="optradio">Se puede cancelar (Con
 									Recargo)
@@ -369,11 +355,6 @@
 									<input type="number" disabled class="form-control" aria-label="Dollar amount">
 								</div>
 							</div>
-
-
-
-
-
 							<div class="form-row">
 								<div class="form-group col-md-12">
 									<div class="form-check">
@@ -385,15 +366,12 @@
 								</div>
 
 							</div>
+							<button type="button" class="btn btn-success col-12">Guardar datos de la
+								reservación</button>
 					</form>
-					<button type="button" class="btn btn-success col-12">Guardar datos de la reservación</button>
-
 				</div>
 			</div>
-			<br><br>
-
-
-		</div> -->
+		</div>
 		<!-- Final de la seccion #1 -->
 
 		<!-- INICIO DE LA SECCION 2 -->
@@ -558,33 +536,153 @@
 		<!-- FINAL DE LA SECCION 2 -->
 
 
-		<!-- Section 3 -->
+
+		<!-- SECCION 3 -->
 		<div class="section-3-container section-container" id="section-3">
 			<div class="container">
 				<div class="row">
 					<div class="col section-3 section-description wow fadeIn">
-						<h2>Agregar empleados</h2>
-						<div class="divider-1 wow fadeInUp"><span></span></div>
+						<h2 class="font-weight-bolder">Agregar empleados</h2>
+						<hr class="col-12 border border-danger">
 					</div>
 				</div>
 			</div>
+
 			<!-- INICIO DEL FORMULARIO DE EMPLEADOS -->
+			<div class="container">
+				<form>
+					<h3 class="text-left">Datos personales del empleado</h3>
+					<hr class="col-4 float-left border border-secondary"><br>
+					<br>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputNameEmp" class="float-left">Nombres</label>
+							<input type="text" class="form-control" id="inputNameEmp" placeholder="Ana Cecilia">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputApellidoEmp" class="float-left">Apellidos</label>
+							<input type="text" class="form-control" id="inputApellidoEmp"
+								placeholder="Triminio Gonzales">
+						</div>
+					</div>
 
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputDniEmp" class="float-left">Nro. de identifiacion</label>
+							<input type="number" class="form-control" id="inputDniEmp" placeholder="0101-1990-02637">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputAreaEmp" class="float-left">Cod. de area</label>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">+</span>
+								</div>
+								<input id="inputAreaEmp" type="number" class="form-control" placeholder="504"
+									aria-label="Cod. de Area" aria-describedby="basic-addon1">
+							</div>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="inputTelefonoEmp" class="float-left">Nro. de telefono</label>
+							<input type="number" class="form-control" id="inputTelefonoEmp" placeholder="3331-1111">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<!-- inicio de fecha -->
+						<div class="form-group col-md-5">
+							<label for="inputFechaNac" class="float-left">Fecha de nacimiento</label>
+							<input type="date" class="form-control" id="inputFechaNac">
+							<!-- final fecha -->
+						</div>
+						<div class="form-group col-md-5">
+							<label for="inputCiudadEmp" class="float-left">Ciudad</label>
+							<input type="text" class="form-control" id="inputCiudadEmp" placeholder="Danli">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputPostalEmp" class="float-left">Cod. Postal</label>
+							<input type="text" class="form-control" id="inputPostalEmp" placeholder="01300">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-4">
+							<label for="inputCargo" class="float-left">Cargo</label>
+							<select id="inputCargo" class="form-control">
+								<option selected>Opciones...</option>
+								<option>...</option>
+							</select>
+						</div>
+						<div class="form-group col-md-8">
+							<label for="inputAddressEmp" class="float-left">Dirección</label>
+							<input type="" class="form-control" id="inputAddressEmp"
+								placeholder="Segunda calle, tercera avenida...">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<label for="inputGeneroEmp" class="pr-lg-5 float-left">Sexo</label>
+							<div class="form-check-inline pr-md-5">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="optradio">Masculino
+								</label>
+							</div>
+							<div class="form-check-inline  pr-md-5">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="optradio">Femenino
+								</label>
+							</div>
+							<div class="form-check-inline  pr-md-5">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="optradio">Prefiero no
+									especificar
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- usuarios empleados -->
+					<form>
+						<fieldset disabled>
+							<div class="form-row">
+								<div class="form-group col-md-4">
+									<label for="inputCorreoEmp" class="float-left">Correo electronico</label>
+									<input type="email" class="form-control" id="inputCorreoEmp"
+										placeholder="ejemplo@gmail.com">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="inputUsuarioEmp" class="float-left">Nombre de usuario</label>
+									<input type="text" class="form-control" id="inputUsuarioEmp"
+										placeholder="martinez01">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="inputPasswordEmp" class="float-left">Contraseña</label>
+									<input type="password" class="form-control" id="inputPasswordEmp"
+										placeholder="contraseña">
+								</div>
+							</div>
+						</fieldset>
+					</form><br>
+					<div class="form-row">
+						<button type="button" class="btn btn-success col-12">Guardar datos del nuevo empleado</button>
+					</div>
+				</form>
+			</div>
 			<!-- FINAL DEL FORMULARIO DE EMPLEADOS -->
-
 		</div>
+		<!-- FINAL DE LA SECCION 3 -->
+
 
 		<!-- Section 4 -->
 		<!-- HABITACIONES -->
 		<div class="section-5-container section-container" id="section-4">
 			<div class="container">
 				<div class="row">
-					<div class="col section-5 section-description wow fadeIn">
-						<h2>Habitaciones</h2>
+					<div class="col section-1 section-description wow fadeIn">
+						<h2 class="font-weight-bolder">Administración de habitaciones</h2>
+						<hr class="col-12 border border-danger">
 					</div>
 				</div>
-
-				<h3 class="text-left">Administración de habitación</h3>
+				<h3 class="text-left">Agregar habitación</h3>
 				<hr class="col-4 float-left border border-secondary"><br>
 				<br>
 
