@@ -158,7 +158,7 @@
 								<input type="text" class="form-control" id="codreservacion" placeholder="00000">
 							</div>
 
-							<div class="form-group col-md-6">
+							<div class="form-group col-md-9">
 								<label for="thabitacion" class="float-left">Nombre del Huesped</label>
 								<select id="thabitacion" class="form-control">
 									<option selected>Opciones...</option>
@@ -206,7 +206,6 @@
 											</div>
 										</div>
 									</div>
-									<!-- // calendario  -->
 								</form>
 							</div>
 
@@ -242,26 +241,25 @@
 							<div class="form-group col-md-4">
 								<label for="nhabitacion" class="float-left">Numero de Niños</label>
 								<select class="form-control" id="nhabitacion">
+									<option>0</option>
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
-									<option>5</option>
 								</select>
 							</div>
 
 							<div class="form-group col-md-4">
 								<label for="nhabitacion" class="float-left">Numero de Bebes</label>
 								<select class="form-control" id="nhabitacion">
+									<option>0</option>
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
-									<option>5</option>
 								</select>
 							</div>
 						</div>
-
 
 						<div class="form-row">
 							<div class="form-group col-md-12">
@@ -689,7 +687,7 @@
 				<form>
 					<div class="form-row">
 						<div class="form-group col-md-2">
-							<label for="codreservacion" class="float-left">Cod. habitación</label>
+							<label for="codreservacion" class="float-left">Nro. de habitación</label>
 							<input type="text" class="form-control" id="codreservacion" placeholder="00000">
 						</div>
 
@@ -765,9 +763,16 @@
 
 						<div class="form-group col-md-6">
 							<label for="Tvista" class="float-left">Imagen de habitación</label>
-							<div class="custom-file">
-								<input type="file" class="custom-file-input" id="customFileLang" lang="es">
-								<label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fa-solid fa-file-image"></i></span>
+								</div>
+								<div class="custom-file">
+									<input accept="image/*" type="file" class="custom-file-input float-left"
+										id="customFileLang" lang="es">
+									<label class="custom-file-label float-left" for="customFileLang">Seleccionar
+										archivo de tipo imagen</label>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -781,83 +786,120 @@
 			</div>
 
 		</div>
-
-
-
-		<!-- </div>
-	</div> -->
-
 		<!-- FIN SECTION 4 -->
 		<!-- FINAL FORM HABITACIONES -->
 
-		<!-- Section 5 -->
-		<div class="section-6-container section-container section-container-image-bg" id="section-6">
+
+		<!-- INICIO DE LA SECCION 5 -->
+		<div class="section-6-container section-container" id="section-6">
 			<div class="container">
 				<div class="row">
-					<div class="col section-6 section-description wow fadeIn">
-						<h2>Administrar servicios</h2>
-						<div class="divider-1 wow fadeInUp"><span></span></div>
-						<p>Send us an email using the form below or follow us on our social media channels.</p>
+					<div class="col section-1 section-description wow fadeIn">
+						<h2 class="font-weight-bolder">Administración de servicios</h2>
+						<hr class="col-12 border border-danger">
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6 section-6-box wow fadeInUp">
-						<h3>By eMail</h3>
-						<div class="section-6-form">
-							<form role="form" action="assets/contact.php" method="post">
-								<div class="form-group">
-									<label class="sr-only" for="contact-email">Email</label>
-									<input type="text" name="email" placeholder="Email..."
-										class="contact-email form-control" id="contact-email">
+
+				<form>
+					<div class="form-row">
+						<div class="form-group col-md-4">
+							<label for="nombreServicio" class="float-left">Nombre del servicio</label>
+							<input type="text" class="form-control" id="nombreServicio" placeholder="Cena navideña">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="tipoServicio" class="float-left">Tipo de servicio</label>
+							<select id="tipoServicio" class="form-control">
+								<option selected>Opciones...</option>
+								<option>...</option>
+							</select>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="precioServicio" class="float-left">Precio del servicio</label>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text">$</span>
 								</div>
-								<div class="form-group">
-									<label class="sr-only" for="contact-subject">Subject</label>
-									<input type="text" name="subject" placeholder="Subject..."
-										class="contact-subject form-control" id="contact-subject">
-								</div>
-								<div class="form-group">
-									<label class="sr-only" for="contact-message">Message</label>
-									<textarea name="message" placeholder="Message..."
-										class="contact-message form-control" id="contact-message"></textarea>
-								</div>
-								<button type="submit" class="btn btn-primary btn-customized"><i
-										class="fas fa-paper-plane"></i> Send Message</button>
-							</form>
+								<input type="number" id="precioServicio" class="form-control">
+							</div>
 						</div>
 					</div>
-					<div class="col-md-5 offset-md-1 section-6-box wow fadeInDown">
-						<h3>Follow us</h3>
-						<div class="section-6-social">
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-dribbble"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>
-							<a href="#"><i class="fab fa-pinterest"></i></a>
+
+					<div class="form-row">
+						<div class="form-group col-md-7">
+							<label for="inputDescripcion" class="float-left">Descripción</label>
+							<input type="text" class="form-control" id="inputDescripcion" placeholder="...">
+						</div>
+
+						<div class="form-group col-md-5">
+							<label for="imgService" class="float-left">Imagen ilustrativa del servicio</label>
+							<div class="input-group mb-4">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fa-solid fa-file-image"></i></span>
+								</div>
+								<div class="custom-file">
+									<input accept="image/*" type="file" class="custom-file-input float-left"
+										id="customFileLang" lang="es"">
+									<label class=" custom-file-label float-left" for="customFileLang">Seleccionar
+									imagen del archivo</label>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputFechaNac" class="float-left">Fecha inicial de vigencia</label>
+							<input type="date" class="form-control" id="inputFechaNac">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputFechaNac" class="float-left">Fecha final de vigencia</label>
+							<input type="date" class="form-control" id="inputFechaNac">
+						</div>
+					</div>
+					<br>
+
+					<div class="form-row">
+						<button type="button" class="btn btn-success col-12">Guardar datos del nuevo servicio</button>
+					</div>
+				</form>
 			</div>
 		</div>
 
 		<!-- Footer -->
-		<footer class="footer-container">
-
-			<div class="container">
-				<div class="row">
-
-					<div class="col">
-						&copy; Hotel Master, derechos reservados 2022 <a href="https://unicah.edu"
-							target="_blank">UNICAH-DW1600-B</a>.
-					</div>
-
+		<footer class="footer-container text-white" style="background-color: #F35B3F;">
+			<div class="container-fluid"">
+				<div class=" row">
+				<div class="col">
+					&copy; Hotel Master, derechos reservados 2022 <a href="https://unicah.edu" target="_blank"
+						style="color: rgb(189, 189, 189);">UNICAH-DW1600-B</a>.
 				</div>
 			</div>
+	</div>
+	</footer>
 
-		</footer>
+	<!-- ESTILOS FOOTER NUEVO-->
+	<!-- Footer -->
+	<!-- <footer class="footer-container text-center text-white" style="background-color: #f35b3f;">
+			<div class="container">
+				<section class="">
+					<p class="d-flex justify-content-center align-items-center">
+						<span class="me-3">Hotel Master</span>
+						<button type="button" class="btn btn-outline-light btn-rounded">
+							Subir
+						</button>
+					</p>
+				</section>
+			</div>
+			<div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+				©️ 2020 Copyright:
+				<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+			</div>
+		</footer> -->
+	<!-- Footer -->
 
 	</div>
-	<!-- End content -->
-
+	<!-- FINAL DE CONTENIDO -->
 	</div>
 	<!-- End wrapper -->
 

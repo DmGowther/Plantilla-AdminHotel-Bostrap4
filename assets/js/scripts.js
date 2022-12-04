@@ -100,7 +100,7 @@ jQuery(document).ready(function () {
     */
   $(".top-content").backstretch("assets/img/backgrounds/1.jpg");
   $(".section-4-container").backstretch("assets/img/backgrounds/2.jpg");
-  $(".section-6-container").backstretch("assets/img/backgrounds/1.jpg");
+  // $(".section-6-container").backstretch("assets/img/backgrounds/1.jpg");
 
   /*
 	    Wow
