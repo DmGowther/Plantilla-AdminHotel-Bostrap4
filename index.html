@@ -389,9 +389,6 @@
 					<button type="button" class="btn btn-success col-12">Guardar datos de la reservación</button>
 
 				</div>
-
-
-
 			</div>
 			<br><br>
 
@@ -418,13 +415,34 @@
 					<br>
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="inputName4" class="float-left">Nombres</label>
-							<input type="text" class="form-control" id="name" placeholder="Armando Jose">
+							<label for="inputName" class="float-left">Nombres</label>
+							<input type="text" class="form-control" id="inputName" placeholder="Armando Jose">
 						</div>
 						<div class="form-group col-md-6">
 							<label for="inputApellido4" class="float-left">Apellidos</label>
 							<input type="text" class="form-control" id="inputApellido4"
 								placeholder="Colindres Hernandez">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputDni" class="float-left">Nro. de identifiacion</label>
+							<input type="number" class="form-control" id="inputDni" placeholder="0703-2000-02644">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputArea" class="float-left">Cod. de area</label>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+									<span class="input-group-text" id="basic-addon1">+</span>
+								</div>
+								<input id="inputArea" type="number" class="form-control" placeholder="504"
+									aria-label="Cod. de Area" aria-describedby="basic-addon1">
+							</div>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="inputTelefono" class="float-left">Nro. de telefono</label>
+							<input type="number" class="form-control" id="inputTelefono" placeholder="9999-9999">
 						</div>
 					</div>
 
@@ -448,7 +466,7 @@
 
 					<div class="form-group">
 						<label for="inputAddress" class="float-left">Dirección</label>
-						<input type="text" class="form-control" id="inputDireccion"
+						<input type="text" class="form-control" id="inputAddress"
 							placeholder="Segunda calle, tercera avenida...">
 					</div>
 
@@ -467,26 +485,26 @@
 						</div>
 					</div>
 
-					<div class="form-group">
-						<label for="inputAddress" class="float-left">Sexo</label>
-						<fieldset class="form-group row">
-							<div class="col-sm-10 text-left">
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-										value="option1" checked>
-									<label class="form-check-label" for="gridRadios1">
-										Masculino
-									</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-										value="option2">
-									<label class="form-check-label" for="gridRadios2">
-										Femenino
-									</label>
-								</div>
+					<div class="form-row">
+						<div class="form-group col-md-12">
+							<label for="inputGeneroEmp" class="pr-lg-5 float-left">Sexo</label>
+							<div class="form-check-inline pr-md-5">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="optradio">Masculino
+								</label>
 							</div>
-						</fieldset>
+							<div class="form-check-inline  pr-md-5">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="optradio">Femenino
+								</label>
+							</div>
+							<div class="form-check-inline  pr-md-5">
+								<label class="form-check-label">
+									<input type="radio" class="form-check-input" name="optradio">Prefiero no
+									especificar
+								</label>
+							</div>
+						</div>
 					</div>
 				</form>
 			</div><br><br>
@@ -516,16 +534,16 @@
 							<br>
 							<div class="row ">
 								<div class="col-md-4 col-sm-4 col-xs-4">
-									<span class="help-block text-muted small-font float-left"> Mes Exp</span>
-									<input type="text" class="form-control" placeholder="MM" />
+									<label for="inputMesExp" class="float-left">Mes exp</label>
+									<input type="text" id="inputMesExp" class="form-control" placeholder="MM" />
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-4">
-									<span class="help-block text-muted small-font float-left"> Año Exp</span>
-									<input type="text" class="form-control" placeholder="YY" />
+									<label for="inputAñoExp" class="float-left">Año exp</label>
+									<input type="text" id="inputAñoExp" class="form-control" placeholder="YY" />
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-4">
-									<span class="help-block text-muted small-font float-left"> CCV</span>
-									<input type="text" class="form-control" placeholder="CCV" />
+									<label for="inputCcv" class="float-left">CCV</label>
+									<input type="text" id="inputCcv" class="form-control" placeholder="000" />
 								</div>
 							</div>
 						</div>
