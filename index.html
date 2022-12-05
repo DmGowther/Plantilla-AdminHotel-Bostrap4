@@ -122,14 +122,14 @@
 									dirigirse a la opcion de ayuda.
 								</p>
 							</div>
-							<!-- <div class="buttons wow fadeInUp">
+							<div class="buttons wow fadeInUp">
 								<a class="btn btn-primary btn-customized scroll-link" href="#section-1" role="button">
 									<i class="fa-solid fa-gear"></i> Ajustes
 								</a>
 								<a class="btn btn-primary btn-customized-2 scroll-link" href="#section-3" role="button">
 									<i class="fa-solid fa-circle-question"></i> Ayuda
 								</a>
-							</div> -->
+							</div>
 						</div>
 					</div>
 				</div>
@@ -228,8 +228,8 @@
 
 						<div class="form-row">
 							<div class="form-group col-md-4">
-								<label for="nhabitacion" class="float-left">Numero de Adultos</label>
-								<select class="form-control" id="nhabitacion">
+								<label for="nAdultos" class="float-left">Numero de Adultos</label>
+								<select class="form-control" id="nAdultos">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -239,8 +239,8 @@
 							</div>
 
 							<div class="form-group col-md-4">
-								<label for="nhabitacion" class="float-left">Numero de Niños</label>
-								<select class="form-control" id="nhabitacion">
+								<label for="nNiños" class="float-left">Numero de Niños</label>
+								<select class="form-control" id="nNiños">
 									<option>0</option>
 									<option>1</option>
 									<option>2</option>
@@ -250,8 +250,8 @@
 							</div>
 
 							<div class="form-group col-md-4">
-								<label for="nhabitacion" class="float-left">Numero de Bebes</label>
-								<select class="form-control" id="nhabitacion">
+								<label for="nBebes" class="float-left">Numero de Bebes</label>
+								<select class="form-control" id="nBebes">
 									<option>0</option>
 									<option>1</option>
 									<option>2</option>
@@ -263,7 +263,7 @@
 
 						<div class="form-row">
 							<div class="form-group col-md-12">
-								<label class="float-left">Complementos</label>
+								<label class="font-weight-bolder float-left">Complementos</label>
 							</div>
 							<div class="form-group col-md-12">
 								<div class="form-check-inline pr-3 float-left">
@@ -307,7 +307,7 @@
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-12">
-								<label class="float-left">Actividades</label>
+								<label class="font-weight-bolder float-left">Actividades</label>
 							</div>
 							<div class="form-group col-md-12">
 								<div class="form-check-inline pr-3 float-left">
@@ -334,8 +334,7 @@
 
 						<div class="form-row">
 							<div class="form-group col-md-12">
-								<label class="float-left">Se puede cancelar</label>
-
+								<label class="font-weight-bolder float-left">¿Se puede cancelar?</label>
 							</div>
 							<div class="form-group col-md-12">
 								<div class="form-check-inline pr-3 float-left">
@@ -353,19 +352,22 @@
 									<input type="number" disabled class="form-control" aria-label="Dollar amount">
 								</div>
 							</div>
-							<div class="form-row">
-								<div class="form-group col-md-12">
-									<div class="form-check">
-										<input class="form-check-input" type="checkbox" value="" id="Condiciones">
-										<label class="form-check-label" for="Condiciones">
-											Terminos y Condiciones
-										</label>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-12">
+								<div class="form-check float-right">
+									<input class="form-check-input" type="checkbox" id="invalidCheck" required>
+									<label class="form-check-label" for="invalidCheck">
+										¿Acepta los terminos y condiciones?
+									</label>
+									<div class="invalid-feedback">
+										Debe aceptar las anteriores condiciones.
 									</div>
 								</div>
-
 							</div>
-							<button type="button" class="btn btn-success col-12">Guardar datos de la
-								reservación</button>
+						</div>
+						<button type="button" id="btnReservacion" class="btn btn-success col-12">Guardar datos de la
+							reservación</button>
 					</form>
 				</div>
 			</div>
@@ -525,7 +527,8 @@
 						</div>
 					</div>
 				</form><br><br>
-				<button type="button" class="btn btn-success col-12">Guardar datos del nuevo cliente</button>
+				<button type="button" id="btnClientes" class="btn btn-success col-12">Guardar datos del nuevo
+					cliente</button>
 			</div>
 			<!-- FINAL DE FORM DE PAGO -->
 			<!-- FINAL DEL FORM DE DATOS PERSONALES -->
@@ -661,7 +664,8 @@
 						</fieldset>
 					</form><br>
 					<div class="form-row">
-						<button type="button" class="btn btn-success col-12">Guardar datos del nuevo empleado</button>
+						<button type="button" id="btnEmpleados" class="btn btn-success col-12">Guardar datos del nuevo
+							empleado</button>
 					</div>
 				</form>
 			</div>
@@ -687,13 +691,13 @@
 				<form>
 					<div class="form-row">
 						<div class="form-group col-md-2">
-							<label for="codreservacion" class="float-left">Nro. de habitación</label>
-							<input type="text" class="form-control" id="codreservacion" placeholder="00000">
+							<label for="nroHab" class="float-left">Nro. de habitación</label>
+							<input type="text" class="form-control" id="nroHab" placeholder="00000">
 						</div>
 
 						<div class="form-group col-md-5">
-							<label for="nhabitacion" class="float-left">Nombre de habitación</label>
-							<input type="text" class="form-control" id="nhabitacion" placeholder="Name">
+							<label for="nombreHab" class="float-left">Nombre de habitación</label>
+							<input type="text" class="form-control" id="nombreHab" placeholder="Name">
 						</div>
 
 						<div class="form-group col-md-5">
@@ -707,24 +711,23 @@
 
 					<div class="form-row">
 						<div class="form-group col-md-12">
-							<label for="inputDescripcion" class="float-left">Descripción</label>
-							<input type="text" class="form-control" id="inputDescripcion" placeholder="...">
+							<label for="inputDescripcionHab" class="float-left">Descripción</label>
+							<input type="text" class="form-control" id="inputDescripcionHab" placeholder="...">
 						</div>
 					</div>
 
-
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="Tcama" class="float-left">Tipo de cama</label>
-							<select id="Tcama" class="form-control">
+							<label for="Tipocama" class="float-left">Tipo de cama</label>
+							<select id="Tipocama" class="form-control">
 								<option selected>Opciones...</option>
 								<option>...</option>
 							</select>
 						</div>
 
 						<div class="form-group col-md-6">
-							<label for="Tvista" class="float-left">Tipo de vista</label>
-							<select id="Tvista" class="form-control">
+							<label for="Tipovista" class="float-left">Tipo de vista</label>
+							<select id="Tipovista" class="form-control">
 								<option selected>Opciones...</option>
 								<option>...</option>
 							</select>
@@ -733,44 +736,44 @@
 
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="tamaniohabitacion" class="float-left">Tamaño de habitación</label>
+							<label for="tamañoHabitacion" class="float-left">Tamaño de habitación</label>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<span class="input-group-text">SQM</span>
 								</div>
-								<input type="number" class="form-control">
+								<input type="number" id="tamañoHabitacion" class="form-control">
 							</div>
 						</div>
 						<div class="form-group col-md-6">
-							<label for="Mpersonas" class="float-left">Maximo de personas</label>
+							<label for="Maxpersonas" class="float-left">Maximo de personas</label>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 								</div>
-								<input type="number" class="form-control">
+								<input type="number" id="Maxpersonas" class="form-control">
 							</div>
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="preciohabitacion" class="float-left">Precio de habitación por noche</label>
+							<label for="precioHabitacion" class="float-left">Precio de habitación por noche</label>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<span class="input-group-text">$</span>
 								</div>
-								<input type="number" class="form-control">
+								<input type="number" id="precioHabitacion" class="form-control">
 							</div>
 						</div>
 
 						<div class="form-group col-md-6">
-							<label for="Tvista" class="float-left">Imagen de habitación</label>
+							<label for="imgHab" class="float-left">Imagen de habitación</label>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<span class="input-group-text"><i class="fa-solid fa-file-image"></i></span>
 								</div>
 								<div class="custom-file">
-									<input accept="image/*" type="file" class="custom-file-input float-left"
-										id="customFileLang" lang="es">
-									<label class="custom-file-label float-left" for="customFileLang">Seleccionar
+									<input accept="image/*" type="file" class="custom-file-input float-left" id="imgHab"
+										lang="es">
+									<label class="custom-file-label float-left" for="">Seleccionar
 										archivo de tipo imagen</label>
 								</div>
 							</div>
@@ -778,7 +781,8 @@
 					</div>
 
 					<div class="form-row">
-						<button type="button" class="btn btn-success col-12">Guardar datos de la nueva
+						<button type="button" id="btnHabitacion" class="btn btn-success col-12">Guardar datos de la
+							nueva
 							habitación</button>
 					</div>
 				</form>
@@ -835,12 +839,14 @@
 							<label for="imgService" class="float-left">Imagen ilustrativa del servicio</label>
 							<div class="input-group mb-4">
 								<div class="input-group-prepend">
-									<span class="input-group-text"><i class="fa-solid fa-file-image"></i></span>
+									<span class="input-group-text">
+										<i class="fa-solid fa-file-image"></i>
+									</span>
 								</div>
 								<div class="custom-file">
 									<input accept="image/*" type="file" class="custom-file-input float-left"
-										id="customFileLang" lang="es"">
-									<label class=" custom-file-label float-left" for="customFileLang">Seleccionar
+										id="imgService" lang="es"">
+									<label class=" custom-file-label float-left" for="">Seleccionar
 									imagen del archivo</label>
 								</div>
 							</div>
@@ -849,18 +855,19 @@
 
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="inputFechaNac" class="float-left">Fecha inicial de vigencia</label>
-							<input type="date" class="form-control" id="inputFechaNac">
+							<label for="inputFechaIniVig" class="float-left">Fecha inicial de vigencia</label>
+							<input type="date" class="form-control" id="inputFechaIniVig">
 						</div>
 						<div class="form-group col-md-6">
-							<label for="inputFechaNac" class="float-left">Fecha final de vigencia</label>
-							<input type="date" class="form-control" id="inputFechaNac">
+							<label for="inputFechaFinVig" class="float-left">Fecha final de vigencia</label>
+							<input type="date" class="form-control" id="inputFechaFinVig">
 						</div>
 					</div>
 					<br>
 
 					<div class="form-row">
-						<button type="button" class="btn btn-success col-12">Guardar datos del nuevo servicio</button>
+						<button type="button" id="btnServicios" class="btn btn-success col-12">Guardar datos del nuevo
+							servicio</button>
 					</div>
 				</form>
 			</div>
@@ -877,26 +884,6 @@
 			</div>
 	</div>
 	</footer>
-
-	<!-- ESTILOS FOOTER NUEVO-->
-	<!-- Footer -->
-	<!-- <footer class="footer-container text-center text-white" style="background-color: #f35b3f;">
-			<div class="container">
-				<section class="">
-					<p class="d-flex justify-content-center align-items-center">
-						<span class="me-3">Hotel Master</span>
-						<button type="button" class="btn btn-outline-light btn-rounded">
-							Subir
-						</button>
-					</p>
-				</section>
-			</div>
-			<div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
-				©️ 2020 Copyright:
-				<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-			</div>
-		</footer> -->
-	<!-- Footer -->
 
 	</div>
 	<!-- FINAL DE CONTENIDO -->
