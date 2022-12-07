@@ -123,11 +123,11 @@
 								</p>
 							</div>
 							<div class="buttons wow fadeInUp">
-								<a class="btn btn-primary btn-customized scroll-link" href="#section-1" role="button">
-									<i class="fa-solid fa-gear"></i> Ajustes
+								<a class="btn btn-primary btn-customized" href="./index_tables.html" role="button">
+									<i class="fa-solid fa-database"></i> Datos
 								</a>
-								<a class="btn btn-primary btn-customized-2 scroll-link" href="#section-3" role="button">
-									<i class="fa-solid fa-circle-question"></i> Ayuda
+								<a class="btn btn-primary btn-customized-2" href="./index.html" role="button">
+									<i class="fa-solid fa-folder-plus"></i> Agregar
 								</a>
 							</div>
 						</div>
@@ -154,30 +154,36 @@
 						<br>
 						<div class="form-row">
 							<div class="form-group col-md-3">
-								<label for="codreservacion" class="float-left">Cod. reservación</label>
-								<input type="text" class="form-control" id="codreservacion" placeholder="00000">
+								<label for="txtCodResv" class="float-left">Cod. reservación</label>
+								<input type="text" class="form-control" id="txtCodResv" placeholder="00000">
 							</div>
 
 							<div class="form-group col-md-9">
-								<label for="thabitacion" class="float-left">Nombre del Huesped</label>
-								<select id="thabitacion" class="form-control">
+								<label for="txtHuespedResv" class="float-left">Nombre del Huesped</label>
+								<select id="txtHuespedResv" class="form-control">
 									<option selected>Opciones...</option>
-									<option>...</option>
+									<option>Nallely Almendares</option>
+									<option>Armando Colindres</option>
+									<option>Jose Hernandez</option>
+									<option>Irma Gonzales</option>
 								</select>
 							</div>
 						</div>
 
 						<div class="form-row">
 							<div class="form-group col-md-4">
-								<label for="Nhuesped" class="float-left">Tipo de habitación</label>
-								<select id="Nhuesped" class="form-control">
+								<label for="txtThabResv" class="float-left">Tipo de habitación</label>
+								<select id="txtThabResv" class="form-control">
 									<option selected>Opciones...</option>
-									<option>...</option>
+									<option>Suit Presidencial</option>
+									<option>Suit Personal</option>
+									<option>Royal Room</option>
+									<option>Master Suit</option>
 								</select>
 							</div>
 							<div class="form-group col-md-4">
-								<label for="nhabitacion" class="float-left">Numero de habitación</label>
-								<select class="form-control" id="nhabitacion">
+								<label for="txtNumhabResv" class="float-left">Numero de habitación</label>
+								<select class="form-control" id="txtNumhabResv">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -187,8 +193,8 @@
 							</div>
 
 							<div class="form-group col-md-4">
-								<label for="phabitacion" class="float-left">Precio habitación</label>
-								<input type="text" class="form-control" id="phabitacion" placeholder="LPS.--">
+								<label for="txtPreciohabResv" class="float-left">Precio habitación</label>
+								<input type="text" class="form-control" id="txtPreciohabResv" placeholder="LPS.--">
 							</div>
 						</div>
 
@@ -197,10 +203,10 @@
 								<form>
 									<!-- calendario  -->
 									<div class="form-group mb-6">
-										<label for="fllegada" class="float-left">Fecha de Llegada</label>
+										<label for="txtLlegResv" class="float-left">Fecha de Llegada</label>
 										<div class="datepicker date input-group">
 											<input type="text" placeholder="Elegir Fecha" class="form-control"
-												id="fllegada">
+												id="txtLlegResv">
 											<div class="input-group-append">
 												<span class="input-group-text"><i class="fa fa-calendar"></i></span>
 											</div>
@@ -213,10 +219,10 @@
 								<form>
 									<!-- calendario  -->
 									<div class="form-group mb-6">
-										<label for="fsalida" class="float-left">Fecha de Salida</label>
+										<label for="txtSalResv" class="float-left">Fecha de Salida</label>
 										<div class="datepicker date input-group">
 											<input type="text" placeholder="Elegir Fecha" class="form-control"
-												id="fsalida">
+												id="txtSalResv">
 											<div class="input-group-append">
 												<span class="input-group-text"><i class="fa fa-calendar"></i></span>
 											</div>
@@ -228,8 +234,8 @@
 
 						<div class="form-row">
 							<div class="form-group col-md-4">
-								<label for="nAdultos" class="float-left">Numero de Adultos</label>
-								<select class="form-control" id="nAdultos">
+								<label for="txtAdultosResv" class="float-left">Numero de Adultos</label>
+								<select class="form-control" id="txtAdultosResv">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -239,8 +245,8 @@
 							</div>
 
 							<div class="form-group col-md-4">
-								<label for="nNiños" class="float-left">Numero de Niños</label>
-								<select class="form-control" id="nNiños">
+								<label for="txtNiñosResv" class="float-left">Numero de Niños</label>
+								<select class="form-control" id="txtNiñosResv">
 									<option>0</option>
 									<option>1</option>
 									<option>2</option>
@@ -250,8 +256,8 @@
 							</div>
 
 							<div class="form-group col-md-4">
-								<label for="nBebes" class="float-left">Numero de Bebes</label>
-								<select class="form-control" id="nBebes">
+								<label for="txtBebesResv" class="float-left">Numero de Bebes</label>
+								<select class="form-control" id="txtBebesResv">
 									<option>0</option>
 									<option>1</option>
 									<option>2</option>
@@ -384,7 +390,7 @@
 					</div>
 				</div>
 			</div>
-			<br><br>
+
 
 			<div class="container" id="d_personals">
 				<form>
@@ -393,73 +399,94 @@
 					<br>
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="inputName" class="float-left">Nombres</label>
-							<input type="text" class="form-control" id="inputName" placeholder="Armando Jose">
+							<label for="txtNombreCli" class="float-left">Nombres</label>
+							<input type="text" class="form-control" id="txtNombreCli" placeholder="Armando Jose">
 						</div>
 						<div class="form-group col-md-6">
-							<label for="inputApellido4" class="float-left">Apellidos</label>
-							<input type="text" class="form-control" id="inputApellido4"
-								placeholder="Colindres Hernandez">
+							<label for="txtApellCli" class="float-left">Apellidos</label>
+							<input type="text" class="form-control" id="txtApellCli" placeholder="Colindres Hernandez">
 						</div>
 					</div>
 
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="inputDni" class="float-left">Nro. de identifiacion</label>
-							<input type="number" class="form-control" id="inputDni" placeholder="0703-2000-02644">
+							<label for="txtDniCli" class="float-left">Nro. de identifiacion</label>
+							<input type="number" class="form-control" id="txtDniCli" placeholder="0703-2000-02644">
 						</div>
 						<div class="form-group col-md-2">
-							<label for="inputArea" class="float-left">Cod. de area</label>
+							<label for="txtAreaCli" class="float-left">Cod. de area</label>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<span class="input-group-text" id="basic-addon1">+</span>
 								</div>
-								<input id="inputArea" type="number" class="form-control" placeholder="504"
+								<input id="txtAreaCli" type="number" class="form-control" placeholder="504"
 									aria-label="Cod. de Area" aria-describedby="basic-addon1">
 							</div>
 						</div>
 						<div class="form-group col-md-4">
-							<label for="inputTelefono" class="float-left">Nro. de telefono</label>
-							<input type="number" class="form-control" id="inputTelefono" placeholder="9999-9999">
+							<label for="txtTelefonoCli" class="float-left">Nro. de telefono</label>
+							<input type="number" class="form-control" id="txtTelefonoCli" placeholder="9999-9999">
 						</div>
 					</div>
 
 					<div class="form-row">
 						<div class="form-group col-md-4">
-							<label for="inputPais" class="float-left">Pais</label>
-							<select id="inputPais" class="form-control">
+							<label for="txtPaisCli" class="float-left">Pais</label>
+							<select id="txtPaisCli" class="form-control">
 								<option selected>Opciones...</option>
-								<option>...</option>
+								<option>Argentina</option>
+								<option>Bolivia</option>
+								<option>Brasil</option>
+								<option>Chile</option>
+								<option>Colombia</option>
+								<option>Costa Rica</option>
+								<option>Cuba</option>
+								<option>Ecuador</option>
+								<option>El Salvador</option>
+								<option>Guatemala</option>
+								<option>Guayana</option>
+								<option>Haití</option>
+								<option>Honduras</option>
+								<option>Jamaica</option>
+								<option>México</option>
+								<option>Nicaragua</option>
+								<option>Paraguay</option>
+								<option>Panamá</option>
+								<option>Perú</option>
+								<option>Puerto Rico</option>
+								<option>República Dominicana</option>
+								<option>Uruguay</option>
+								<option>Venezuela</option>
 							</select>
 						</div>
 						<div class="form-group col-md-6">
-							<label for="inputCiudad" class="float-left">Ciudad</label>
-							<input type="text" class="form-control" id="inputCiudad" placeholder="Danli">
+							<label for="txtCiudadCli" class="float-left">Ciudad</label>
+							<input type="text" class="form-control" id="txtCiudadCli" placeholder="Danli">
 						</div>
 						<div class="form-group col-md-2">
-							<label for="inputPostal" class="float-left">Cod. Postal</label>
-							<input type="text" class="form-control" id="inputPostal" placeholder="01300">
+							<label for="txtPostalCli" class="float-left">Cod. Postal</label>
+							<input type="text" class="form-control" id="txtPostalCli" placeholder="01300">
 						</div>
 					</div>
 
 					<div class="form-group">
-						<label for="inputAddress" class="float-left">Dirección</label>
-						<input type="text" class="form-control" id="inputAddress"
+						<label for="txtDirecCli" class="float-left">Dirección</label>
+						<input type="text" class="form-control" id="txtDirecCli"
 							placeholder="Segunda calle, tercera avenida...">
 					</div>
 
 					<div class="form-row">
 						<div class="form-group col-md-4">
-							<label for="inputCorreo" class="float-left">Correo electronico</label>
-							<input type="email" class="form-control" id="inputCorreo" placeholder="ejemplo@gmail.com">
+							<label for="txtCorreoCli" class="float-left">Correo electronico</label>
+							<input type="email" class="form-control" id="txtCorreoCli" placeholder="ejemplo@gmail.com">
 						</div>
 						<div class="form-group col-md-4">
-							<label for="inputUsuario" class="float-left">Nombre de usuario</label>
-							<input type="text" class="form-control" id="inputUsuario" placeholder="martinez01">
+							<label for="txtUsuarioCli" class="float-left">Nombre de usuario</label>
+							<input type="text" class="form-control" id="txtUsuarioCli" placeholder="martinez01">
 						</div>
 						<div class="form-group col-md-4">
-							<label for="inputPassword" class="float-left">Contraseña</label>
-							<input type="password" class="form-control" id="inputPassword" placeholder="contraseña">
+							<label for="txtContraseñaCli" class="float-left">Contraseña</label>
+							<input type="password" class="form-control" id="txtContraseñaCli" placeholder="contraseña">
 						</div>
 					</div>
 
@@ -497,31 +524,31 @@
 						<div class="panel-heading">
 							<div class="row ">
 								<div class="col-md-6 ">
-									<label for="inputNomTitular" class="float-left">Nombre del titular de la
+									<label for="txtTitularCli" class="float-left">Nombre del titular de la
 										tarjeta</label>
-									<input id="inputNomTitular" type="text" class="form-control"
+									<input id="txtTitularCli" type="text" class="form-control"
 										placeholder="Ernesto Alfonoso Martinez Garcia" />
 								</div>
 								<div class="col-md-6">
-									<label for="inputNumTarjeta" class="float-left">Numero de la tarjea de
+									<label for="txtNumTarCli" class="float-left">Numero de la tarjea de
 										credito/debito</label>
-									<input type="text" id="inputNumTarjeta" class="form-control"
+									<input type="text" id="txtNumTarCli" class="form-control"
 										placeholder="0000-0000-0000-0000" />
 								</div>
 							</div>
 							<br>
 							<div class="row ">
 								<div class="col-md-4 col-sm-4 col-xs-4">
-									<label for="inputMesExp" class="float-left">Mes exp</label>
-									<input type="text" id="inputMesExp" class="form-control" placeholder="MM" />
+									<label for="txtMesExpCli" class="float-left">Mes exp</label>
+									<input type="text" id="txtMesExpCli" class="form-control" placeholder="MM" />
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-4">
-									<label for="inputAñoExp" class="float-left">Año exp</label>
-									<input type="text" id="inputAñoExp" class="form-control" placeholder="YY" />
+									<label for="txtAñoExpCli" class="float-left">Año exp</label>
+									<input type="text" id="txtAñoExpCli" class="form-control" placeholder="YY" />
 								</div>
 								<div class="col-md-4 col-sm-4 col-xs-4">
-									<label for="inputCcv" class="float-left">CCV</label>
-									<input type="text" id="inputCcv" class="form-control" placeholder="000" />
+									<label for="txtCcvCli" class="float-left">CCV</label>
+									<input type="text" id="txtCcvCli" class="form-control" placeholder="000" />
 								</div>
 							</div>
 						</div>
@@ -557,65 +584,69 @@
 					<br>
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="inputNameEmp" class="float-left">Nombres</label>
-							<input type="text" class="form-control" id="inputNameEmp" placeholder="Ana Cecilia">
+							<label for="txtNombreEmpl" class="float-left">Nombres</label>
+							<input type="text" class="form-control" id="txtNombreEmpl" placeholder="Ana Cecilia">
 						</div>
 						<div class="form-group col-md-6">
-							<label for="inputApellidoEmp" class="float-left">Apellidos</label>
-							<input type="text" class="form-control" id="inputApellidoEmp"
-								placeholder="Triminio Gonzales">
+							<label for="txtApellEmpl" class="float-left">Apellidos</label>
+							<input type="text" class="form-control" id="txtApellEmpl" placeholder="Triminio Gonzales">
 						</div>
 					</div>
 
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="inputDniEmp" class="float-left">Nro. de identifiacion</label>
-							<input type="number" class="form-control" id="inputDniEmp" placeholder="0101-1990-02637">
+							<label for="txtDniEmpl" class="float-left">Nro. de identifiacion</label>
+							<input type="number" class="form-control" id="txtDniEmpl" placeholder="0101-1990-02637">
 						</div>
 						<div class="form-group col-md-2">
-							<label for="inputAreaEmp" class="float-left">Cod. de area</label>
+							<label for="txtAreaEmpl" class="float-left">Cod. de area</label>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<span class="input-group-text" id="basic-addon1">+</span>
 								</div>
-								<input id="inputAreaEmp" type="number" class="form-control" placeholder="504"
+								<input id="txtAreaEmpl" type="number" class="form-control" placeholder="504"
 									aria-label="Cod. de Area" aria-describedby="basic-addon1">
 							</div>
 						</div>
 						<div class="form-group col-md-4">
-							<label for="inputTelefonoEmp" class="float-left">Nro. de telefono</label>
-							<input type="number" class="form-control" id="inputTelefonoEmp" placeholder="3331-1111">
+							<label for="txtTelEmpl" class="float-left">Nro. de telefono</label>
+							<input type="number" class="form-control" id="txtTelEmpl" placeholder="3331-1111">
 						</div>
 					</div>
 
 					<div class="form-row">
 						<!-- inicio de fecha -->
 						<div class="form-group col-md-5">
-							<label for="inputFechaNac" class="float-left">Fecha de nacimiento</label>
-							<input type="date" class="form-control" id="inputFechaNac">
+							<label for="txtFNacEmpl" class="float-left">Fecha de nacimiento</label>
+							<input type="date" class="form-control" id="txtFNacEmpl">
 							<!-- final fecha -->
 						</div>
 						<div class="form-group col-md-5">
-							<label for="inputCiudadEmp" class="float-left">Ciudad</label>
-							<input type="text" class="form-control" id="inputCiudadEmp" placeholder="Danli">
+							<label for="txtCiudadEmpl" class="float-left">Ciudad</label>
+							<input type="text" class="form-control" id="txtCiudadEmpl" placeholder="Danli">
 						</div>
 						<div class="form-group col-md-2">
-							<label for="inputPostalEmp" class="float-left">Cod. Postal</label>
-							<input type="text" class="form-control" id="inputPostalEmp" placeholder="01300">
+							<label for="txtPostalEmpl" class="float-left">Cod. Postal</label>
+							<input type="text" class="form-control" id="txtPostalEmpl" placeholder="01300">
 						</div>
 					</div>
 
 					<div class="form-row">
 						<div class="form-group col-md-4">
-							<label for="inputCargo" class="float-left">Cargo</label>
-							<select id="inputCargo" class="form-control">
+							<label for="txtCargoEmpl" class="float-left">Cargo</label>
+							<select id="txtCargoEmpl" class="form-control">
 								<option selected>Opciones...</option>
-								<option>...</option>
+								<option>Gerente</option>
+								<option>Recepcionista</option>
+								<option>Cocinero</option>
+								<option>Jardinero</option>
+								<option>Mucama</option>
+								<option>Botones</option>
 							</select>
 						</div>
 						<div class="form-group col-md-8">
-							<label for="inputAddressEmp" class="float-left">Dirección</label>
-							<input type="" class="form-control" id="inputAddressEmp"
+							<label for="txtDirecEmpl" class="float-left">Dirección</label>
+							<input type="" class="form-control" id="txtDirecEmpl"
 								placeholder="Segunda calle, tercera avenida...">
 						</div>
 					</div>
@@ -624,17 +655,20 @@
 							<label for="inputGeneroEmp" class="pr-lg-5 float-left">Sexo</label>
 							<div class="form-check-inline pr-md-5">
 								<label class="form-check-label">
-									<input type="radio" class="form-check-input" name="optradio">Masculino
+									<input type="radio" id="txtGeneroEmpl" class="form-check-input" name="optradio"
+										value="Masculino">Masculino
 								</label>
 							</div>
 							<div class="form-check-inline  pr-md-5">
 								<label class="form-check-label">
-									<input type="radio" class="form-check-input" name="optradio">Femenino
+									<input type="radio" id="txtGeneroEmpl" class="form-check-input" name="optradio"
+										value="Femenino">Femenino
 								</label>
 							</div>
 							<div class="form-check-inline  pr-md-5">
 								<label class="form-check-label">
-									<input type="radio" class="form-check-input" name="optradio">Prefiero no
+									<input type="radio" id="txtGeneroEmpl" class="form-check-input" name="optradio"
+										value="No Especificar">Prefiero no
 									especificar
 								</label>
 							</div>
@@ -643,25 +677,23 @@
 
 					<!-- usuarios empleados -->
 					<form>
-						<fieldset disabled>
-							<div class="form-row">
-								<div class="form-group col-md-4">
-									<label for="inputCorreoEmp" class="float-left">Correo electronico</label>
-									<input type="email" class="form-control" id="inputCorreoEmp"
-										placeholder="ejemplo@gmail.com">
-								</div>
-								<div class="form-group col-md-4">
-									<label for="inputUsuarioEmp" class="float-left">Nombre de usuario</label>
-									<input type="text" class="form-control" id="inputUsuarioEmp"
-										placeholder="martinez01">
-								</div>
-								<div class="form-group col-md-4">
-									<label for="inputPasswordEmp" class="float-left">Contraseña</label>
-									<input type="password" class="form-control" id="inputPasswordEmp"
-										placeholder="contraseña">
-								</div>
+						<!-- <fieldset id="fieldUsuarios" disabled> -->
+						<div class="form-row">
+							<div class="form-group col-md-4">
+								<label for="txtCorreoEmpl" class="float-left">Correo electronico</label>
+								<input type="email" class="form-control" id="txtCorreoEmpl"
+									placeholder="ejemplo@gmail.com">
 							</div>
-						</fieldset>
+							<div class="form-group col-md-4">
+								<label for="txtUsuarioEmpl" class="float-left">Nombre de usuario</label>
+								<input type="text" class="form-control" id="txtUsuarioEmpl" placeholder="martinez01">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="txtContraEmpl" class="float-left">Contraseña</label>
+								<input type="password" class="form-control" id="txtContraEmpl" placeholder="contraseña">
+							</div>
+						</div>
+						<!-- </fieldset> -->
 					</form><br>
 					<div class="form-row">
 						<button type="button" id="btnEmpleados" class="btn btn-success col-12">Guardar datos del nuevo
@@ -691,18 +723,18 @@
 				<form>
 					<div class="form-row">
 						<div class="form-group col-md-2">
-							<label for="nroHab" class="float-left">Nro. de habitación</label>
-							<input type="text" class="form-control" id="nroHab" placeholder="00000">
+							<label for="txtNumHab" class="float-left">Nro. de habitación</label>
+							<input type="text" class="form-control" id="txtNumHab" placeholder="00000">
 						</div>
 
 						<div class="form-group col-md-5">
-							<label for="nombreHab" class="float-left">Nombre de habitación</label>
-							<input type="text" class="form-control" id="nombreHab" placeholder="Name">
+							<label for="txtNomHab" class="float-left">Nombre de habitación</label>
+							<input type="text" class="form-control" id="txtNomHab" placeholder="Name">
 						</div>
 
 						<div class="form-group col-md-5">
-							<label for="tipohabitacion" class="float-left">Tipo de habitación</label>
-							<select id="tipohabitacion" class="form-control">
+							<label for="txtTipoHab" class="float-left">Tipo de habitación</label>
+							<select id="txtTipoHab" class="form-control">
 								<option selected>Opciones...</option>
 								<option>...</option>
 							</select>
@@ -711,23 +743,23 @@
 
 					<div class="form-row">
 						<div class="form-group col-md-12">
-							<label for="inputDescripcionHab" class="float-left">Descripción</label>
-							<input type="text" class="form-control" id="inputDescripcionHab" placeholder="...">
+							<label for="txtDescHab" class="float-left">Descripción</label>
+							<input type="text" class="form-control" id="txtDescHab" placeholder="...">
 						</div>
 					</div>
 
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="Tipocama" class="float-left">Tipo de cama</label>
-							<select id="Tipocama" class="form-control">
+							<label for="txtTCamaHab" class="float-left">Tipo de cama</label>
+							<select id="txtTCamaHab" class="form-control">
 								<option selected>Opciones...</option>
 								<option>...</option>
 							</select>
 						</div>
 
 						<div class="form-group col-md-6">
-							<label for="Tipovista" class="float-left">Tipo de vista</label>
-							<select id="Tipovista" class="form-control">
+							<label for="txtTVistaHab" class="float-left">Tipo de vista</label>
+							<select id="txtTVistaHab" class="form-control">
 								<option selected>Opciones...</option>
 								<option>...</option>
 							</select>
@@ -736,43 +768,43 @@
 
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="tamañoHabitacion" class="float-left">Tamaño de habitación</label>
+							<label for="txtTamHab" class="float-left">Tamaño de habitación</label>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<span class="input-group-text">SQM</span>
 								</div>
-								<input type="number" id="tamañoHabitacion" class="form-control">
+								<input type="number" id="txtTamHab" class="form-control">
 							</div>
 						</div>
 						<div class="form-group col-md-6">
-							<label for="Maxpersonas" class="float-left">Maximo de personas</label>
+							<label for="txtMaxPHab" class="float-left">Maximo de personas</label>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 								</div>
-								<input type="number" id="Maxpersonas" class="form-control">
+								<input type="number" id="txtMaxPHab" class="form-control">
 							</div>
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="precioHabitacion" class="float-left">Precio de habitación por noche</label>
+							<label for="txtPrecioHab" class="float-left">Precio de habitación por noche</label>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<span class="input-group-text">$</span>
 								</div>
-								<input type="number" id="precioHabitacion" class="form-control">
+								<input type="number" id="txtPrecioHab" class="form-control">
 							</div>
 						</div>
 
 						<div class="form-group col-md-6">
-							<label for="imgHab" class="float-left">Imagen de habitación</label>
+							<label for="txtImgHab" class="float-left">Imagen de habitación</label>
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<span class="input-group-text"><i class="fa-solid fa-file-image"></i></span>
 								</div>
 								<div class="custom-file">
-									<input accept="image/*" type="file" class="custom-file-input float-left" id="imgHab"
-										lang="es">
+									<input accept="image/*" type="file" class="custom-file-input float-left"
+										id="txtImgHab" lang="es">
 									<label class="custom-file-label float-left" for="">Seleccionar
 										archivo de tipo imagen</label>
 								</div>
@@ -788,7 +820,6 @@
 				</form>
 
 			</div>
-
 		</div>
 		<!-- FIN SECTION 4 -->
 		<!-- FINAL FORM HABITACIONES -->
@@ -806,37 +837,43 @@
 
 				<form>
 					<div class="form-row">
+						<div class="form-group col-md-2">
+							<label for="txtIdServ" class="float-left">ID del servicio</label>
+							<input type="text" class="form-control" id="txtIdServ" placeholder="0000">
+						</div>
 						<div class="form-group col-md-4">
-							<label for="nombreServicio" class="float-left">Nombre del servicio</label>
-							<input type="text" class="form-control" id="nombreServicio" placeholder="Cena navideña">
+							<label for="txtNameServ" class="float-left">Nombre del servicio</label>
+							<input type="text" class="form-control" id="txtNameServ" placeholder="Cena navideña">
 						</div>
 
 						<div class="form-group col-md-4">
-							<label for="tipoServicio" class="float-left">Tipo de servicio</label>
-							<select id="tipoServicio" class="form-control">
+							<label for="txtTipeServ" class="float-left">Tipo de servicio</label>
+							<select id="txtTipeServ" class="form-control">
 								<option selected>Opciones...</option>
-								<option>...</option>
+								<option>Menu</option>
+								<option>Negocios</option>
+								<option>Entretenimiento</option>
 							</select>
 						</div>
-						<div class="form-group col-md-4">
-							<label for="precioServicio" class="float-left">Precio del servicio</label>
-							<div class="input-group mb-3">
+						<div class="form-group col-md-2">
+							<label for="txtPriceServ" class="float-left">Precio del servicio</label>
+							<div class="input-group">
 								<div class="input-group-prepend">
 									<span class="input-group-text">$</span>
 								</div>
-								<input type="number" id="precioServicio" class="form-control">
+								<input type="number" id="txtPriceServ" class="form-control">
 							</div>
 						</div>
 					</div>
 
 					<div class="form-row">
 						<div class="form-group col-md-7">
-							<label for="inputDescripcion" class="float-left">Descripción</label>
-							<input type="text" class="form-control" id="inputDescripcion" placeholder="...">
+							<label for="txtDescripServ" class="float-left">Descripción</label>
+							<input type="text" class="form-control" id="txtDescripServ" placeholder="...">
 						</div>
 
 						<div class="form-group col-md-5">
-							<label for="imgService" class="float-left">Imagen ilustrativa del servicio</label>
+							<label for="txtImgServ" class="float-left">Imagen ilustrativa del servicio</label>
 							<div class="input-group mb-4">
 								<div class="input-group-prepend">
 									<span class="input-group-text">
@@ -845,7 +882,7 @@
 								</div>
 								<div class="custom-file">
 									<input accept="image/*" type="file" class="custom-file-input float-left"
-										id="imgService" lang="es"">
+										id="txtImgServ" lang="es"">
 									<label class=" custom-file-label float-left" for="">Seleccionar
 									imagen del archivo</label>
 								</div>
@@ -855,12 +892,12 @@
 
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<label for="inputFechaIniVig" class="float-left">Fecha inicial de vigencia</label>
-							<input type="date" class="form-control" id="inputFechaIniVig">
+							<label for="txtFeIniServ" class="float-left">Fecha inicial de vigencia</label>
+							<input type="date" class="form-control" id="txtFeIniServ">
 						</div>
 						<div class="form-group col-md-6">
-							<label for="inputFechaFinVig" class="float-left">Fecha final de vigencia</label>
-							<input type="date" class="form-control" id="inputFechaFinVig">
+							<label for="txtFeFinServ" class="float-left">Fecha final de vigencia</label>
+							<input type="date" class="form-control" id="txtFeFinServ">
 						</div>
 					</div>
 					<br>
@@ -870,8 +907,10 @@
 							servicio</button>
 					</div>
 				</form>
-			</div>
+			</div><br><br>
+
 		</div>
+
 
 		<!-- Footer -->
 		<footer class="footer-container text-white" style="background-color: #F35B3F;">
@@ -890,6 +929,10 @@
 	</div>
 	<!-- End wrapper -->
 
+
+	<!-- querys de la base de datos -->
+	<script src="./Base/bunnisesLogic.js"></script>
+	<script src="./Base/Ulogic.js"></script>
 
 	<!-- Javascript -->
 	<script src="assets/js/jquery-3.3.1.min.js"></script>

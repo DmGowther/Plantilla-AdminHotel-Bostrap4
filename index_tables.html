@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>HOTEL MASTER</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-queries.css">
+
+
+
+	<!-- Favicon o iconos selecionables -->
+	<link rel="shortcut icon" href="assets/ico/hotelUbicacion_16x16.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/hotelUbicacion_144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/hotelUbicacion_114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/hotelUbicacion_72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/hotelUbicacion_57x57.png">
+
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div class="wrapper">
+
+		<!-- Menu de navegacion::Estilo SideBar -->
+		<nav class="sidebar">
+
+			<!-- close sidebar menu -->
+			<div class="dismiss">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+
+			<div class="logo">
+				<h3>
+					<a href="index.html">Hotel Master</a>
+				</h3>
+			</div>
+
+			<ul class="list-unstyled menu-elements">
+				<li class="active">
+					<a class="scroll-link" href="#section-1">
+						<i class="fa-regular fa-calendar-days"></i> Crear reservación</a>
+				</li>
+				<li>
+					<a class="scroll-link" href="#section-2">
+						<i class="fa-solid fa-user-plus"></i> Agregar cliente</a>
+				</li>
+				<li>
+					<a class="scroll-link" href="#section-3"><i class="fa-solid fa-user-tie"></i> Agregar empleado</a>
+				</li>
+				<li>
+					<a class="scroll-link" href="#section-5"><i class="fa-solid fa-bed"></i> Gestionar habitación</a>
+				</li>
+				<li>
+					<a class="scroll-link" href="#section-6"><i class="fa-solid fa-bell-concierge"></i> Gestionar
+						Servicios</a>
+				</li>
+				<li>
+					<a href="#otherSections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"
+						role="button" aria-controls="otherSections">
+						<i class="fas fa-sync"></i>Otras opciones
+					</a>
+					<ul class="collapse list-unstyled" id="otherSections">
+						<li>
+							<a class="scroll-link" href="#">Ayuda</a>
+						</li>
+						<li>
+							<a class="scroll-link" href="#">Ajustes</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div class="to-top">
+				<a class="btn btn-primary btn-customized-3" href="#" role="button">
+					<i class="fas fa-arrow-up"></i> Arriba
+				</a>
+			</div>
+
+			<div class="dark-light-buttons">
+				<a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Oscuro</a>
+				<a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Claro</a>
+			</div>
+
+		</nav>
+		<!-- Final del menu de navegacion::Estilo SideBar -->
+
+		<!-- Dark overlay -->
+		<div class="overlay"></div>
+
+		<!-- Contenido -->
+		<div class="content">
+
+			<!-- Boton para abrir el menu -->
+			<a class="btn btn-primary btn-customized open-menu" href="#" role="button">
+				<i class="fas fa-align-left"></i> <span>Menu</span>
+			</a>
+
+			<!-- Parte superior del contenido (Slider)-->
+			<div class="top-content section-container" id="top-content">
+				<div class="container">
+					<div class="row">
+						<div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+							<h1 class="wow fadeIn">Panel de administracion del <strong>Hotel Master</strong></h1>
+							<div class="description wow fadeInLeft">
+								<p>
+									El panel de administración esta orientado a personal autorizado y capacitado para
+									usarlo, en caso de necesitar una guia para usar el panel de administracón puede
+									dirigirse a la opcion de ayuda.
+								</p>
+							</div>
+							<div class="buttons wow fadeInUp">
+								<a class="btn btn-primary btn-customized" href="./index_tables.html" role="button">
+									<i class="fa-solid fa-database"></i> Datos
+								</a>
+								<a class="btn btn-primary btn-customized-2" href="./index.html" role="button">
+									<i class="fa-solid fa-folder-plus"></i> Agregar
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Final de la parte superior del contenido (Slider)-->
+
+
+			<!-- Seccion #1 -->
+			<div class="section-1-container section-container" id="section-1">
+
+				<div class="container">
+					<div class="row">
+						<div class="col section-1 section-description wow fadeIn">
+							<h2 class="font-weight-bolder">Lista de reservaciones</h2>
+							<hr class="col-12 border border-danger">
+						</div>
+					</div>
+
+					<div class="d-none">
+						<form>
+							<h3 class="text-left">Datos de la nueva reservación</h3>
+							<hr class="col-4 float-left border border-secondary"><br>
+							<br>
+							<div class="form-row">
+								<div class="form-group col-md-3">
+									<label for="txtCodResv" class="float-left">Cod. reservación</label>
+									<input type="text" class="form-control" id="txtCodResv" placeholder="00000">
+								</div>
+
+								<div class="form-group col-md-9">
+									<label for="txtHuespedResv" class="float-left">Nombre del Huesped</label>
+									<select id="txtHuespedResv" class="form-control">
+										<option selected>Opciones...</option>
+										<option>Nallely Almendares</option>
+										<option>Armando Colindres</option>
+										<option>Jose Hernandez</option>
+										<option>Irma Gonzales</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-4">
+									<label for="txtThabResv" class="float-left">Tipo de habitación</label>
+									<select id="txtThabResv" class="form-control">
+										<option selected>Opciones...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="txtNumhabResv" class="float-left">Numero de habitación</label>
+									<select class="form-control" id="txtNumhabResv">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+
+								<div class="form-group col-md-4">
+									<label for="txtPreciohabResv" class="float-left">Precio habitación</label>
+									<input type="text" class="form-control" id="txtPreciohabResv" placeholder="LPS.--">
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<form>
+										<!-- calendario  -->
+										<div class="form-group mb-6">
+											<label for="txtLlegResv" class="float-left">Fecha de Llegada</label>
+											<div class="datepicker date input-group">
+												<input type="text" placeholder="Elegir Fecha" class="form-control"
+													id="txtLlegResv">
+												<div class="input-group-append">
+													<span class="input-group-text"><i class="fa fa-calendar"></i></span>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<div class="form-group col-md-6">
+									<form>
+										<!-- calendario  -->
+										<div class="form-group mb-6">
+											<label for="txtSalResv" class="float-left">Fecha de Salida</label>
+											<div class="datepicker date input-group">
+												<input type="text" placeholder="Elegir Fecha" class="form-control"
+													id="txtSalResv">
+												<div class="input-group-append">
+													<span class="input-group-text"><i class="fa fa-calendar"></i></span>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-4">
+									<label for="txtAdultosResv" class="float-left">Numero de Adultos</label>
+									<select class="form-control" id="txtAdultosResv">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+
+								<div class="form-group col-md-4">
+									<label for="txtNiñosResv" class="float-left">Numero de Niños</label>
+									<select class="form-control" id="txtNiñosResv">
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</div>
+
+								<div class="form-group col-md-4">
+									<label for="txtBebesResv" class="float-left">Numero de Bebes</label>
+									<select class="form-control" id="txtBebesResv">
+										<option>0</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-12">
+									<label class="font-weight-bolder float-left">Complementos</label>
+								</div>
+								<div class="form-group col-md-12">
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="desayuno">Desayuno
+										</label>
+
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="almuerzo">Almuerzo
+										</label>
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="cena">Cena
+										</label>
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="postres"> Postres
+										</label>
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="recoger"> Recoger en
+											el
+											aeropuerto/Est. Tren
+										</label>
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="parking"> Parking
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-12">
+									<label class="font-weight-bolder float-left">Actividades</label>
+								</div>
+								<div class="form-group col-md-12">
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="desayuno"> Tour
+											turistico
+											por la ciudad
+										</label>
+
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="almuerzo"> Tour
+											Gastronomico
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<label class="form-check-label">
+											<input type="checkbox" class="form-check-input" name="cena">Tour cultural
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-group col-md-12">
+									<label class="font-weight-bolder float-left">¿Se puede cancelar?</label>
+								</div>
+								<div class="form-group col-md-12">
+									<div class="form-check-inline pr-3 float-left">
+										<input type="radio" class="form-check-input" name="optradio">Se puede cancelar
+										(Con
+										Recargo)
+									</div>
+
+									<div class="form-check-inline pr-3 float-left">
+										<input type="radio" class="form-check-input" name="optradio">No se puede
+										cancelar
+									</div>
+									<div class="form-check-inline pl-3 float-left">
+										<div class="input-group-prepend">
+											<span class="input-group-text">$</span>
+										</div>
+										<input type="number" disabled class="form-control" aria-label="Dollar amount">
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-12">
+									<div class="form-check float-right">
+										<input class="form-check-input" type="checkbox" id="invalidCheck" required>
+										<label class="form-check-label" for="invalidCheck">
+											¿Acepta los terminos y condiciones?
+										</label>
+										<div class="invalid-feedback">
+											Debe aceptar las anteriores condiciones.
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" id="btnReservacion" class="btn btn-success col-12">Guardar datos de la
+								reservación</button>
+						</form>
+					</div>
+
+					<!-- TABLA DE RESERVACIONES -->
+					<div class="table-responsive">
+						<table class="table table-hover table-bordered" id="tablaReservas">
+							<thead>
+								<tr>
+									<th scope="col">Codigo</th>
+									<th scope="col">Huesped</th>
+									<th scope="col">T. Habitación</th>
+									<th scope="col">N. Habitación</th>
+									<th scope="col">Precio</th>
+									<th scope="col">F. Llegada</th>
+									<th scope="col">F. Salida</th>
+									<th scope="col">Adultos</th>
+									<th scope="col">Niños</th>
+									<th scope="col">Bebes</th>
+								</tr>
+							</thead>
+							<tbody>
+								<!-- CUERPO DE LA TABLA -->
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Final de la seccion #1 -->
+
+		<!-- INICIO DE LA SECCION 2 -->
+		<div class="section-2-container section-container" id="section-2">
+			<div class="container">
+				<div class="row">
+					<div class="col section-1 section-description wow fadeIn">
+						<h2 class="font-weight-bolder">Clientes Registrados</h2>
+						<hr class="col-12 border border-danger">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="d-none">
+				<div class="container" id="d_personals">
+					<form>
+						<h3 class="text-left">Datos personales del nuevo cliente</h3>
+						<hr class="col-4 float-left border border-secondary"><br>
+						<br>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="txtNombreCli" class="float-left">Nombres</label>
+								<input type="text" class="form-control" id="txtNombreCli" placeholder="Armando Jose">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="txtApellCli" class="float-left">Apellidos</label>
+								<input type="text" class="form-control" id="txtApellCli"
+									placeholder="Colindres Hernandez">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="txtDniCli" class="float-left">Nro. de identifiacion</label>
+								<input type="number" class="form-control" id="txtDniCli" placeholder="0703-2000-02644">
+							</div>
+							<div class="form-group col-md-2">
+								<label for="txtAreaCli" class="float-left">Cod. de area</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text" id="basic-addon1">+</span>
+									</div>
+									<input id="txtAreaCli" type="number" class="form-control" placeholder="504"
+										aria-label="Cod. de Area" aria-describedby="basic-addon1">
+								</div>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="txtTelefonoCli" class="float-left">Nro. de telefono</label>
+								<input type="number" class="form-control" id="txtTelefonoCli" placeholder="9999-9999">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-4">
+								<label for="txtPaisCli" class="float-left">Pais</label>
+								<select id="txtPaisCli" class="form-control">
+									<option selected>Opciones...</option>
+									<option>Argentina</option>
+									<option>Bolivia</option>
+									<option>Brasil</option>
+									<option>Chile</option>
+									<option>Colombia</option>
+									<option>Costa Rica</option>
+									<option>Cuba</option>
+									<option>Ecuador</option>
+									<option>El Salvador</option>
+									<option>Guatemala</option>
+									<option>Guayana</option>
+									<option>Haití</option>
+									<option>Honduras</option>
+									<option>Jamaica</option>
+									<option>México</option>
+									<option>Nicaragua</option>
+									<option>Paraguay</option>
+									<option>Panamá</option>
+									<option>Perú</option>
+									<option>Puerto Rico</option>
+									<option>República Dominicana</option>
+									<option>Uruguay</option>
+									<option>Venezuela</option>
+								</select>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="txtCiudadCli" class="float-left">Ciudad</label>
+								<input type="text" class="form-control" id="txtCiudadCli" placeholder="Danli">
+							</div>
+							<div class="form-group col-md-2">
+								<label for="txtPostalCli" class="float-left">Cod. Postal</label>
+								<input type="text" class="form-control" id="txtPostalCli" placeholder="01300">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="txtDirecCli" class="float-left">Dirección</label>
+							<input type="text" class="form-control" id="txtDirecCli"
+								placeholder="Segunda calle, tercera avenida...">
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-4">
+								<label for="txtCorreoCli" class="float-left">Correo electronico</label>
+								<input type="email" class="form-control" id="txtCorreoCli"
+									placeholder="ejemplo@gmail.com">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="txtUsuarioCli" class="float-left">Nombre de usuario</label>
+								<input type="text" class="form-control" id="txtUsuarioCli" placeholder="martinez01">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="txtContraseñaCli" class="float-left">Contraseña</label>
+								<input type="password" class="form-control" id="txtContraseñaCli"
+									placeholder="contraseña">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-12">
+								<label for="inputGeneroEmp" class="pr-lg-5 float-left">Sexo</label>
+								<div class="form-check-inline pr-md-5">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="optradio">Masculino
+									</label>
+								</div>
+								<div class="form-check-inline  pr-md-5">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="optradio">Femenino
+									</label>
+								</div>
+								<div class="form-check-inline  pr-md-5">
+									<label class="form-check-label">
+										<input type="radio" class="form-check-input" name="optradio">Prefiero no
+										especificar
+									</label>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<!-- INICIO DEL FORM DE PAGO -->
+				<div class="container tarjeta_content">
+					<form action="#" class="credit-card-div">
+						<h3 class="text-left">Datos de pago</h3>
+						<hr class="col-4 float-left border border-secondary"><br>
+						<br>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="row ">
+									<div class="col-md-6 ">
+										<label for="txtTitularCli" class="float-left">Nombre del titular de la
+											tarjeta</label>
+										<input id="txtTitularCli" type="text" class="form-control"
+											placeholder="Ernesto Alfonoso Martinez Garcia" />
+									</div>
+									<div class="col-md-6">
+										<label for="txtNumTarCli" class="float-left">Numero de la tarjea de
+											credito/debito</label>
+										<input type="text" id="txtNumTarCli" class="form-control"
+											placeholder="0000-0000-0000-0000" />
+									</div>
+								</div>
+								<br>
+								<div class="row ">
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<label for="txtMesExpCli" class="float-left">Mes exp</label>
+										<input type="text" id="txtMesExpCli" class="form-control" placeholder="MM" />
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<label for="txtAñoExpCli" class="float-left">Año exp</label>
+										<input type="text" id="txtAñoExpCli" class="form-control" placeholder="YY" />
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<label for="txtCcvCli" class="float-left">CCV</label>
+										<input type="text" id="txtCcvCli" class="form-control" placeholder="000" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<button type="button" id="btnClientes" class="btn btn-success col-12">Guardar datos del nuevo
+						cliente</button>
+				</div>
+			</div>
+			<!-- TABLA -->
+			<div class="container">
+				<!-- TABLA DE CLIENTES -->
+				<div class="table-responsive">
+					<table class="table table-hover table-bordered" id="tablaClientes">
+						<thead>
+							<tr>
+								<th scope="col">Nombre Completo</th>
+								<th scope="col">Identidad</th>
+								<th scope="col">Telefono</th>
+								<th scope="col">Pais</th>
+								<th scope="col">Ciudad</th>
+								<th scope="col">Cod. Postal</th>
+								<th scope="col">Dirección</th>
+								<th scope="col">Correo</th>
+								<th scope="col">Usuario</th>
+								<th scope="col">T. Numero</th>
+								<th scope="col">T. Fecha exp</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- CUERPO DE LA TABLA -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- FINAL DE FORM DE PAGO -->
+			<!-- FINAL DEL FORM DE DATOS PERSONALES -->
+			<!-- FINAL DEL FORMULARIO DE RESERVACIONES-->
+		</div>
+		<!-- FINAL DE LA SECCION 2 -->
+
+
+		<!-- SECCION 3 -->
+		<div class="section-3-container section-container" id="section-3">
+			<div class="container">
+				<div class="row">
+					<div class="col section-3 section-description wow fadeIn">
+						<h2 class="font-weight-bolder">Empleados registrados</h2>
+						<hr class="col-12 border border-danger">
+					</div>
+				</div>
+			</div>
+
+			<!-- INICIO DEL FORMULARIO DE EMPLEADOS -->
+			<div class="container">
+				<div class="d-none">
+					<form>
+						<h3 class="text-left">Datos personales del empleado</h3>
+						<hr class="col-4 float-left border border-secondary"><br>
+						<br>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="txtNombreEmpl" class="float-left">Nombres</label>
+								<input type="text" class="form-control" id="txtNombreEmpl" placeholder="Ana Cecilia">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="txtApellEmpl" class="float-left">Apellidos</label>
+								<input type="text" class="form-control" id="txtApellEmpl"
+									placeholder="Triminio Gonzales">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="txtDniEmpl" class="float-left">Nro. de identifiacion</label>
+								<input type="number" class="form-control" id="txtDniEmpl" placeholder="0101-1990-02637">
+							</div>
+							<div class="form-group col-md-2">
+								<label for="txtAreaEmpl" class="float-left">Cod. de area</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text" id="basic-addon1">+</span>
+									</div>
+									<input id="txtAreaEmpl" type="number" class="form-control" placeholder="504"
+										aria-label="Cod. de Area" aria-describedby="basic-addon1">
+								</div>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="txtTelEmpl" class="float-left">Nro. de telefono</label>
+								<input type="number" class="form-control" id="txtTelEmpl" placeholder="3331-1111">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<!-- inicio de fecha -->
+							<div class="form-group col-md-5">
+								<label for="txtFNacEmpl" class="float-left">Fecha de nacimiento</label>
+								<input type="date" class="form-control" id="txtFNacEmpl">
+								<!-- final fecha -->
+							</div>
+							<div class="form-group col-md-5">
+								<label for="txtCiudadEmpl" class="float-left">Ciudad</label>
+								<input type="text" class="form-control" id="txtCiudadEmpl" placeholder="Danli">
+							</div>
+							<div class="form-group col-md-2">
+								<label for="txtPostalEmpl" class="float-left">Cod. Postal</label>
+								<input type="text" class="form-control" id="txtPostalEmpl" placeholder="01300">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-4">
+								<label for="txtCargoEmpl" class="float-left">Cargo</label>
+								<select id="txtCargoEmpl" class="form-control">
+									<option selected>Opciones...</option>
+									<option>Gerente</option>
+									<option>Recepcionista</option>
+									<option>Cocinero</option>
+									<option>Jardinero</option>
+									<option>Mucama</option>
+									<option>Botones</option>
+								</select>
+							</div>
+							<div class="form-group col-md-8">
+								<label for="txtDirecEmpl" class="float-left">Dirección</label>
+								<input type="" class="form-control" id="txtDirecEmpl"
+									placeholder="Segunda calle, tercera avenida...">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-12">
+								<label for="inputGeneroEmp" class="pr-lg-5 float-left">Sexo</label>
+								<div class="form-check-inline pr-md-5">
+									<label class="form-check-label">
+										<input type="radio" id="txtGeneroEmpl" class="form-check-input" name="optradio"
+											value="Masculino">Masculino
+									</label>
+								</div>
+								<div class="form-check-inline  pr-md-5">
+									<label class="form-check-label">
+										<input type="radio" id="txtGeneroEmpl" class="form-check-input" name="optradio"
+											value="Femenino">Femenino
+									</label>
+								</div>
+								<div class="form-check-inline  pr-md-5">
+									<label class="form-check-label">
+										<input type="radio" id="txtGeneroEmpl" class="form-check-input" name="optradio"
+											value="No Especificar">Prefiero no
+										especificar
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<!-- usuarios empleados -->
+						<form>
+							<fieldset id="fieldUsuarios" disabled>
+								<div class="form-row">
+									<div class="form-group col-md-4">
+										<label for="txtCorreoEmpl" class="float-left">Correo electronico</label>
+										<input type="email" class="form-control" id="txtCorreoEmpl"
+											placeholder="ejemplo@gmail.com">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="txtUsuarioEmpl" class="float-left">Nombre de usuario</label>
+										<input type="text" class="form-control" id="txtUsuarioEmpl"
+											placeholder="martinez01">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="txtContraEmpl" class="float-left">Contraseña</label>
+										<input type="password" class="form-control" id="txtContraEmpl"
+											placeholder="contraseña">
+									</div>
+								</div>
+							</fieldset>
+						</form><br>
+						<div class="form-row">
+							<button type="button" id="btnEmpleados" class="btn btn-success col-12">Guardar datos del
+								nuevo
+								empleado</button>
+						</div>
+					</form>
+				</div>
+				<!-- TABLA DE EMPLEADOS -->
+				<div class="table-responsive">
+					<table class="table table-hover table-bordered" id="tablaEmpleados">
+						<thead>
+							<tr>
+								<th scope="col">Nombres</th>
+								<th scope="col">Apellidos</th>
+								<th scope="col">Identidad</th>
+								<th scope="col">Telefono</th>
+								<th scope="col">F. nacimiento</th>
+								<th scope="col">Ciudad</th>
+								<th scope="col">Cod. Postal</th>
+								<th scope="col">Cargo</th>
+								<th scope="col">Dirección</th>
+								<th scope="col">Correo</th>
+								<th scope="col">Usuario</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- CUERPO DE LA TABLA -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- FINAL DEL FORMULARIO DE EMPLEADOS -->
+		</div>
+		<!-- FINAL DE LA SECCION 3 -->
+
+		<!-- Section 4 -->
+		<!-- HABITACIONES -->
+		<div class="section-5-container section-container" id="section-4">
+			<div class="container">
+				<div class="row">
+					<div class="col section-1 section-description wow fadeIn">
+						<h2 class="font-weight-bolder">Lista de habitaciones registradas</h2>
+						<hr class="col-12 border border-danger">
+					</div>
+				</div>
+				<div class="d-none">
+					<h3 class="text-left">Agregar habitación</h3>
+					<hr class="col-4 float-left border border-secondary"><br>
+					<br>
+				</div>
+				<div class="d-none">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-2">
+								<label for="txtNumHab" class="float-left">Nro. de habitación</label>
+								<input type="text" class="form-control" id="txtNumHab" placeholder="00000">
+							</div>
+
+							<div class="form-group col-md-5">
+								<label for="txtNomHab" class="float-left">Nombre de habitación</label>
+								<input type="text" class="form-control" id="txtNomHab" placeholder="Name">
+							</div>
+
+							<div class="form-group col-md-5">
+								<label for="txtTipoHab" class="float-left">Tipo de habitación</label>
+								<select id="txtTipoHab" class="form-control">
+									<option selected>Opciones...</option>
+									<option>...</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-12">
+								<label for="txtDescHab" class="float-left">Descripción</label>
+								<input type="text" class="form-control" id="txtDescHab" placeholder="...">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="txtTCamaHab" class="float-left">Tipo de cama</label>
+								<select id="txtTCamaHab" class="form-control">
+									<option selected>Opciones...</option>
+									<option>...</option>
+								</select>
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="txtTVistaHab" class="float-left">Tipo de vista</label>
+								<select id="txtTVistaHab" class="form-control">
+									<option selected>Opciones...</option>
+									<option>...</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="txtTamHab" class="float-left">Tamaño de habitación</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">SQM</span>
+									</div>
+									<input type="number" id="txtTamHab" class="form-control">
+								</div>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="txtMaxPHab" class="float-left">Maximo de personas</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+									</div>
+									<input type="number" id="txtMaxPHab" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="txtPrecioHab" class="float-left">Precio de habitación por noche</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text">$</span>
+									</div>
+									<input type="number" id="txtPrecioHab" class="form-control">
+								</div>
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="txtImgHab" class="float-left">Imagen de habitación</label>
+								<div class="input-group mb-3">
+									<div class="input-group-prepend">
+										<span class="input-group-text"><i class="fa-solid fa-file-image"></i></span>
+									</div>
+									<div class="custom-file">
+										<input accept="image/*" type="file" class="custom-file-input float-left"
+											id="txtImgHab" lang="es">
+										<label class="custom-file-label float-left" for="">Seleccionar
+											archivo de tipo imagen</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<button type="button" id="btnHabitacion" class="btn btn-success col-12">Guardar datos de la
+								nueva
+								habitación</button>
+						</div>
+					</form>
+				</div>
+				<!-- TABLA DE HABITACIONES -->
+				<div class="table-responsive">
+					<table class="table table-hover table-bordered" id="tablaHabitacion">
+						<thead>
+							<tr>
+								<th scope="col">Nro. Habitación</th>
+								<th scope="col">Nombre</th>
+								<th scope="col">Tipo</th>
+								<th scope="col">Descripción</th>
+								<th scope="col">Cama</th>
+								<th scope="col">Vista</th>
+								<th scope="col">Tamaño</th>
+								<th scope="col">Personas</th>
+								<th scope="col">Precio/Noche</th>
+								<th scope="col">URl de imagen</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- CUERPO DE LA TABLA -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- FIN SECTION 4 -->
+		<!-- FINAL FORM HABITACIONES -->
+
+
+		<!-- INICIO DE LA SECCION 5 -->
+		<div class="section-6-container section-container" id="section-6">
+			<div class="container">
+				<div class="row">
+					<div class="col section-1 section-description wow fadeIn">
+						<h2 class="font-weight-bolder">Lista de servicios agregados</h2>
+						<hr class="col-12 border border-danger">
+					</div>
+				</div>
+
+				<div class="d-none">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-md-2">
+								<label for="txtIdServ" class="float-left">ID del servicio</label>
+								<input type="text" class="form-control" id="txtIdServ" placeholder="0000">
+							</div>
+							<div class="form-group col-md-4">
+								<label for="txtNameServ" class="float-left">Nombre del servicio</label>
+								<input type="text" class="form-control" id="txtNameServ" placeholder="Cena navideña">
+							</div>
+
+							<div class="form-group col-md-4">
+								<label for="txtTipeServ" class="float-left">Tipo de servicio</label>
+								<select id="txtTipeServ" class="form-control">
+									<option selected>Opciones...</option>
+									<option>Menu</option>
+									<option>Negocios</option>
+									<option>Entretenimiento</option>
+								</select>
+							</div>
+							<div class="form-group col-md-2">
+								<label for="txtPriceServ" class="float-left">Precio del servicio</label>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<span class="input-group-text">$</span>
+									</div>
+									<input type="number" id="txtPriceServ" class="form-control">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-7">
+								<label for="txtDescripServ" class="float-left">Descripción</label>
+								<input type="text" class="form-control" id="txtDescripServ" placeholder="...">
+							</div>
+
+							<div class="form-group col-md-5">
+								<label for="txtImgServ" class="float-left">Imagen ilustrativa del servicio</label>
+								<div class="input-group mb-4">
+									<div class="input-group-prepend">
+										<span class="input-group-text">
+											<i class="fa-solid fa-file-image"></i>
+										</span>
+									</div>
+									<div class="custom-file">
+										<input accept="image/*" type="file" class="custom-file-input float-left"
+											id="txtImgServ" lang="es"">
+									<label class=" custom-file-label float-left" for="">Seleccionar
+										imagen del archivo</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<label for="txtFeIniServ" class="float-left">Fecha inicial de vigencia</label>
+								<input type="date" class="form-control" id="txtFeIniServ">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="txtFeFinServ" class="float-left">Fecha final de vigencia</label>
+								<input type="date" class="form-control" id="txtFeFinServ">
+							</div>
+						</div>
+						<br>
+
+						<div class="form-row">
+							<button type="button" id="btnServicios" class="btn btn-outline-danger col-12">Guardar datos
+								del
+								nuevo
+								servicio</button>
+						</div>
+					</form>
+				</div>
+				<!-- TABLA DE SERVICIOS -->
+				<div class="table-responsive">
+					<table class="table table-hover table-bordered" id="tablaServicios">
+						<thead>
+							<tr>
+								<th scope="col">Id</th>
+								<th scope="col">Nombre</th>
+								<th scope="col">Tipo</th>
+								<th scope="col">Precio</th>
+								<th scope="col">Descripción</th>
+								<th scope="col">Url de Imagen</th>
+								<th scope="col">Fecha de inicio</th>
+								<th scope="col">Fecha de final</th>
+							</tr>
+						</thead>
+						<tbody>
+					</table>
+				</div>
+			</div><br><br>
+
+		</div>
+		<!-- TABLA -->
+		<!-- <div class="container">
+
+		</div> -->
+		<div>
+			<!-- Footer -->
+			<footer class="footer-container text-white" style="background-color: #F35B3F;">
+				<div class="container-fluid"">
+				<div class=" row">
+					<div class="col">
+						&copy; Hotel Master, derechos reservados 2022 <a href="https://unicah.edu" target="_blank"
+							style="color: rgb(189, 189, 189);">UNICAH-DW1600-B</a>.
+					</div>
+				</div>
+			</footer>
+		</div>
+
+	</div>
+	<!-- FINAL DE CONTENIDO -->
+	</div>
+	<!-- End wrapper -->
+
+	<!-- querys de la base de datos -->
+	<script src="./Base/bunnisesLogic.js"></script>
+	<script src="./Base/Ulogic.js"></script>
+
+	<!-- Javascript -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+
+	<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="assets/js/datepicker.js"></script>
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="https://kit.fontawesome.com/3e069d0dca.js" crossorigin="anonymous"></script>
+
+	<!-- Datepicker -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+	</script>
+	<!-- datepicker styles -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
+
+
+</body>
+
+</html>
